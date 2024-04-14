@@ -1,0 +1,11 @@
+class: Catagory
+table: catagory
+fields:
+  name: String
+  desc: String?
+  catagory: Catagory?,relation(optional,onDelete=SetNull,name=main_catagory)
+  subcatagories: List<Catagory>?,relation(name=main_catagory)
+indexes:
+  catagory_name_idx:
+    fields: name
+    unique: true

@@ -1,0 +1,17 @@
+class: Address
+table: address
+fields:
+  lat: double?
+  lng: double?
+  plusCode: String?
+  name: String?
+  street: String?
+  isoCountryCode: String?
+  country: String?
+  postalCode: String?
+  administrativeArea: String?
+  subAdministrativeArea: String?
+  locality: String?
+  subLocality: String?
+  thoroughfare: String?
+  subThoroughfare: String?

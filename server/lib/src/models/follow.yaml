@@ -1,0 +1,6 @@
+class: Follow
+table: follow
+fields:
+  shop: Shop?,relation(onDelete=Cascade)
+  user: module:auth:UserInfo?,relation(onDelete=Cascade)
+  createdAt: DateTime

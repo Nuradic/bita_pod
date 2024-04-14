@@ -1,0 +1,8 @@
+class: Order
+table: order
+fields:
+  status: OrderStatus
+  soldBy: module:auth:UserInfo?,relation(optional,onDelete=SetNull)
+  message: String,
+  shop: Shop?,relation(onDelete=Cascade)
+  user: module:auth:UserInfo?,relation(optional,onDelete=SetNull)

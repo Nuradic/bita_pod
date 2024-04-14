@@ -1,0 +1,24 @@
+catagoryBrand:
+  - createCatagories:
+  - getCatagories:
+  - getMainCatagories:
+  - createBrands:
+  - getBrands:
+example:
+  - hello:
+shop:
+  - createShop:
+  - getMyShops:
+  - suggestedShops:
+  - updateShop:
+user:
+  - getStartedPhone:
+  - getStartedEmail:
+  - loginWithOtpAndPhone:
+  - loginWithOtpAndEmail:
+  - loginWithPhoneAndPassword:
+  - loginWithEmailAndPassword:
+  - logout:
+  - getBgInfo:
+  - checkIfnumberOremailExists:
+  - updateUser:

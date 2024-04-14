@@ -1,0 +1,5 @@
+class: Employe
+table: employe
+fields:
+  user: module:auth:UserInfo?,relation(onDelete=Cascade)
+  shop: Shop?,relation(name=shop_employees)

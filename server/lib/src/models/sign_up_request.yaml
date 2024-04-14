@@ -1,0 +1,11 @@
+class: SignUpRequest
+table: sign_up_request
+serverOnly: true
+fields:
+  phoneNumber: String?
+  email: String?
+  emailOtp: String?
+  phoneOtp: String?
+  isPhoneVerified: bool?
+  isEmailVerified: bool?
+  status: UserStatus?

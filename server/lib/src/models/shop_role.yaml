@@ -1,0 +1,6 @@
+enum: ShopRole
+serialized: byName
+values:
+  - OWNER
+  - MANAGER
+  - SALER

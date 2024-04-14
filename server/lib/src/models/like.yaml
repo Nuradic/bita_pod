@@ -1,0 +1,10 @@
+class: Like
+table: like
+fields:
+  product: Product?,relation(onDelete=Cascade)
+  user: module:auth:UserInfo?,relation(onDelete=Cascade)
+
+indexes:
+  product_user_like_idx:
+    fields: productId,userId
+    unique: true

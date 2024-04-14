@@ -1,0 +1,6 @@
+class: Brand
+table: brand
+fields:
+  name: String
+  desc: String
+  catagory: Catagory?,relation

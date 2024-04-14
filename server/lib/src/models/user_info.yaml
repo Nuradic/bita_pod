@@ -1,0 +1,19 @@
+class: BackgroundInfo
+table: background_info
+fields:
+  phoneNumber: String?
+  email: String?
+  password: String?
+  firstName: String?
+  lastName: String?
+  userId: int?
+  user: module:auth:UserInfo?,relation(field=userId,optional)
+
+indexes:
+  user_phone_idx:
+    fields: phoneNumber
+    unique: true
+
+  bg_info_user:
+    fields: userId
+    unique: true

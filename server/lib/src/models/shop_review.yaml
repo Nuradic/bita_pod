@@ -1,0 +1,7 @@
+class: ShopReview
+table: shop_review
+fields:
+  user: module:auth:UserInfo?,relation(optional,onDelete=SetNull)
+  shop: Shop?,relation(onDelete=Cascade)
+  content: String?
+  rate: ShopRate

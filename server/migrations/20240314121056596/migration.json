@@ -1,0 +1,208 @@
+{
+  "actions": [
+    {
+      "type": "alterTable",
+      "alterTable": {
+        "name": "address",
+        "schema": "public",
+        "addColumns": [
+          {
+            "name": "name",
+            "columnType": 0,
+            "isNullable": true,
+            "dartType": "String?"
+          },
+          {
+            "name": "street",
+            "columnType": 0,
+            "isNullable": true,
+            "dartType": "String?"
+          },
+          {
+            "name": "isoCountryCode",
+            "columnType": 0,
+            "isNullable": true,
+            "dartType": "String?"
+          },
+          {
+            "name": "postalCode",
+            "columnType": 0,
+            "isNullable": true,
+            "dartType": "String?"
+          },
+          {
+            "name": "administrativeArea",
+            "columnType": 0,
+            "isNullable": true,
+            "dartType": "String?"
+          },
+          {
+            "name": "subAdministrativeArea",
+            "columnType": 0,
+            "isNullable": true,
+            "dartType": "String?"
+          },
+          {
+            "name": "subLocality",
+            "columnType": 0,
+            "isNullable": true,
+            "dartType": "String?"
+          },
+          {
+            "name": "thoroughfare",
+            "columnType": 0,
+            "isNullable": true,
+            "dartType": "String?"
+          },
+          {
+            "name": "subThoroughfare",
+            "columnType": 0,
+            "isNullable": true,
+            "dartType": "String?"
+          }
+        ],
+        "deleteColumns": [
+          "sublocality",
+          "admin1",
+          "admin2"
+        ],
+        "modifyColumns": [],
+        "addIndexes": [],
+        "deleteIndexes": [],
+        "addForeignKeys": [],
+        "deleteForeignKeys": [],
+        "warnings": [
+          {
+            "type": "columnDropped",
+            "message": "Column \"sublocality\" of table \"address\" will be dropped.",
+            "table": "address",
+            "columns": [
+              "sublocality"
+            ],
+            "destrucive": true
+          },
+          {
+            "type": "columnDropped",
+            "message": "Column \"admin1\" of table \"address\" will be dropped.",
+            "table": "address",
+            "columns": [
+              "admin1"
+            ],
+            "destrucive": true
+          },
+          {
+            "type": "columnDropped",
+            "message": "Column \"admin2\" of table \"address\" will be dropped.",
+            "table": "address",
+            "columns": [
+              "admin2"
+            ],
+            "destrucive": true
+          },
+          {
+            "type": "columnDropped",
+            "message": "Column \"status\" of table \"sign_up_request\" will be dropped.",
+            "table": "sign_up_request",
+            "columns": [
+              "status"
+            ],
+            "destrucive": true
+          }
+        ]
+      }
+    },
+    {
+      "type": "alterTable",
+      "alterTable": {
+        "name": "sign_up_request",
+        "schema": "public",
+        "addColumns": [],
+        "deleteColumns": [
+          "status"
+        ],
+        "modifyColumns": [],
+        "addIndexes": [],
+        "deleteIndexes": [],
+        "addForeignKeys": [],
+        "deleteForeignKeys": [],
+        "warnings": [
+          {
+            "type": "columnDropped",
+            "message": "Column \"sublocality\" of table \"address\" will be dropped.",
+            "table": "address",
+            "columns": [
+              "sublocality"
+            ],
+            "destrucive": true
+          },
+          {
+            "type": "columnDropped",
+            "message": "Column \"admin1\" of table \"address\" will be dropped.",
+            "table": "address",
+            "columns": [
+              "admin1"
+            ],
+            "destrucive": true
+          },
+          {
+            "type": "columnDropped",
+            "message": "Column \"admin2\" of table \"address\" will be dropped.",
+            "table": "address",
+            "columns": [
+              "admin2"
+            ],
+            "destrucive": true
+          },
+          {
+            "type": "columnDropped",
+            "message": "Column \"status\" of table \"sign_up_request\" will be dropped.",
+            "table": "sign_up_request",
+            "columns": [
+              "status"
+            ],
+            "destrucive": true
+          }
+        ]
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "type": "columnDropped",
+      "message": "Column \"sublocality\" of table \"address\" will be dropped.",
+      "table": "address",
+      "columns": [
+        "sublocality"
+      ],
+      "destrucive": true
+    },
+    {
+      "type": "columnDropped",
+      "message": "Column \"admin1\" of table \"address\" will be dropped.",
+      "table": "address",
+      "columns": [
+        "admin1"
+      ],
+      "destrucive": true
+    },
+    {
+      "type": "columnDropped",
+      "message": "Column \"admin2\" of table \"address\" will be dropped.",
+      "table": "address",
+      "columns": [
+        "admin2"
+      ],
+      "destrucive": true
+    },
+    {
+      "type": "columnDropped",
+      "message": "Column \"status\" of table \"sign_up_request\" will be dropped.",
+      "table": "sign_up_request",
+      "columns": [
+        "status"
+      ],
+      "destrucive": true
+    }
+  ],
+  "migrationApiVersion": 1
+}

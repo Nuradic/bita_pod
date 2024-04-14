@@ -1,0 +1,7 @@
+class: Blocked
+table: blocked
+fields:
+  shop: Shop?,relation(optional,onDelete=Cascade)
+  user: module:auth:UserInfo?,relation(optional,onDelete=Cascade)
+  product: Product?,relation(optional,onDelete=Cascade)
+  endDate: DateTime?

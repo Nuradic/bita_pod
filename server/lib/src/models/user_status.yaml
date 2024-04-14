@@ -1,0 +1,8 @@
+enum: UserStatus
+serialized: byName
+values:
+  - unverified
+  - incomplete
+  - noShopAssociated
+  - hasInvite
+  - noIssue

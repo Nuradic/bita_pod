@@ -1,0 +1,7 @@
+enum: ReportStatus
+serialized: byName
+values:
+  - PENDING_REVIEW
+  - REVIEWED
+  - CANCELED
+  - TAKE_ACTION

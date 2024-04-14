@@ -1,0 +1,6 @@
+class: Policy
+table: policy
+fields:
+  number: int
+  detail: String
+  createdAt: DateTime

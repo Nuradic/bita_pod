@@ -1,0 +1,48 @@
+{
+  "actions": [
+    {
+      "type": "alterTable",
+      "alterTable": {
+        "name": "background_info",
+        "schema": "public",
+        "addColumns": [],
+        "deleteColumns": [],
+        "modifyColumns": [
+          {
+            "columnName": "firstName",
+            "addNullable": false,
+            "removeNullable": true,
+            "changeDefault": false
+          }
+        ],
+        "addIndexes": [],
+        "deleteIndexes": [],
+        "addForeignKeys": [],
+        "deleteForeignKeys": [],
+        "warnings": [
+          {
+            "type": "notNullAdded",
+            "message": "Column firstName of table background_info is modified to be not null. If there are existing rows with null values, this migration will fail.",
+            "table": "background_info",
+            "columns": [
+              "firstName"
+            ],
+            "destrucive": false
+          }
+        ]
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "type": "notNullAdded",
+      "message": "Column firstName of table background_info is modified to be not null. If there are existing rows with null values, this migration will fail.",
+      "table": "background_info",
+      "columns": [
+        "firstName"
+      ],
+      "destrucive": false
+    }
+  ],
+  "migrationApiVersion": 1
+}

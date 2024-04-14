@@ -1,0 +1,41 @@
+# This is the configuration file for your local development environment. By
+# default, it runs a single server on port 8080. To set up your server, you will
+# need to add the name of the database you are connecting to and the user name.
+# The password for the database is stored in the config/passwords.yaml.
+#
+# When running your server locally, the server ports are the same as the public
+# facing ports.
+
+# Configuration for the main API server.
+apiServer:
+  port: 8680
+  publicHost: localhost
+  publicPort: 8680
+  publicScheme: http
+
+# Configuration for the Insights server.
+insightsServer:
+  port: 8681
+  publicHost: localhost
+  publicPort: 8681
+  publicScheme: http
+
+# Configuration for the web server.
+webServer:
+  port: 8682
+  publicHost: localhost
+  publicPort: 8682
+  publicScheme: http
+
+# This is the database setup for your server.
+database:
+  host: localhost
+  port: 5432
+  name: g_dev
+  user: nurad
+
+# This is the setup for Redis.
+redis:
+  enabled: false
+  host: localhost
+  port: 6388

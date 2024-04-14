@@ -1,0 +1,6 @@
+enum: BizSize
+serialized: byName
+values:
+  - regular
+  - supplier
+  - both

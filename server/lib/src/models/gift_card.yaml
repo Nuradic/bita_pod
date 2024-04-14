@@ -1,0 +1,9 @@
+class: GiftCard
+table: gift_card
+fields:
+  # scope:
+  owner: module:auth:UserInfo?,relation(onDelete=Cascade)
+  createdBy: module:auth:UserInfo?,relation(optional,onDelete=SetNull)
+  reedemed: bool
+  expireDate: DateTime?
+  createdAt: DateTime

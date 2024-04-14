@@ -1,0 +1,9 @@
+enum: ShopAction
+serialized: byName
+values:
+  - EDIT
+  - DELETE
+  - SALE
+  - PRICE_CHANGE
+  - ORDER_CONFIRM
+  - ORDER_CANCEL

@@ -1,0 +1,12 @@
+class: Shop
+table: shop
+fields:
+  name: String
+  logo: String?
+  bgImage: String?
+  owner: module:auth:UserInfo?,relation(onDelete=Cascade)
+  catagory: Catagory?,relation(optional,onDelete=SetNull)
+  employees: List<Employe>?,relation(name=shop_employees)
+  address: Address?,relation(optional,onDelete=Cascade)
+  createdAt: DateTime
+  updatedAt: DateTime

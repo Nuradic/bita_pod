@@ -1,0 +1,4 @@
+class: InActiveProduct
+table: in_active_product
+fields:
+  product: Product?,relation(onDelete=Cascade)

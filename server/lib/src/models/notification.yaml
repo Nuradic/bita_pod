@@ -1,0 +1,7 @@
+class: Notification
+table: notification
+fields:
+  user: module:auth:UserInfo?,relation(onDelete=Cascade)
+  title: String
+  type: NotificationType
+  content: String

@@ -1,0 +1,18 @@
+{
+    "java.project.sourcePaths": [
+      "lib"
+    ],
+    "sqltools.connections": [
+      {
+        "previewLimit": 50,
+        "server": "localhost",
+        "port": 5432,
+        "driver": "PostgreSQL",
+        "name": "Postgress",
+        "database": "g_dev",
+        "username": "nurad",
+        "password": "mnbvcxz"
+      }
+    ]
+  }
+  

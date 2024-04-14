@@ -1,0 +1,8 @@
+enum: OrderStatus
+serialized: byName
+values:
+  - COLLECTED
+  - PENDING_CONFIRMATION
+  - CONFIRMED
+  - READY
+  - RECEIVED

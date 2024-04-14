@@ -1,0 +1,5 @@
+class: UserInterest
+table: user_interest
+fields:
+  catagory: Catagory?,relation(onDelete=Cascade)
+  user: module:auth:UserInfo?,relation(onDelete=Cascade)

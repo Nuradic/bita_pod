@@ -1,0 +1,7 @@
+class: ShopPreference
+table: shop_preference
+fields:
+  shop: Shop?,relation(onDelete=Cascade)
+  isAvailableOnline: bool
+  notifyNewProductComing: bool
+  acceptOrders: bool

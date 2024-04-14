@@ -1,0 +1,9 @@
+class: Report
+table: report
+fields:
+  status: ReportStatus
+  shop: Shop?,relation(optional,onDelete=Cascade)
+  reporter: module:auth:UserInfo?,relation(optional,onDelete=SetNull)
+  phoneNum: String?
+  email: String?
+  violator: module:auth:UserInfo?,relation(optional,onDelete=SetNull)

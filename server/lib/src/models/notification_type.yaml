@@ -1,0 +1,6 @@
+enum: NotificationType
+serialized: byName
+values:
+  - BROADCAST
+  - JUST_ONE
+  - GROUP

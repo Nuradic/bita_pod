@@ -1,0 +1,8 @@
+class: ShopActivity
+table: shop_activity
+fields:
+  employe: module:auth:UserInfo?,relation(optional,onDelete=SetNull)
+  shop: Shop?,relation(onDelete=Cascade)
+  desc: String?
+  action: ShopAction?
+  timestamp: DateTime

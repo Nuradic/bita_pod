@@ -1,0 +1,7 @@
+class: Sale
+table: sale
+fields:
+  discount: double?
+  price: int
+  order: Order?,relation(onDelete=Restrict)
+  desc: String?

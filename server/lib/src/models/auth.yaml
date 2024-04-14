@@ -1,0 +1,7 @@
+class: Authentication
+fields:
+  id: int
+  key: String
+  user: module:auth:UserInfo
+  bg: BackgroundInfo
+  status: UserStatus?

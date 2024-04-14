@@ -1,0 +1,10 @@
+class: Product
+table: product
+fields:
+  name: String
+  image: String?
+  buyingPrice: double
+  sellingPrice: double
+  brand: Brand?,relation(optional,onDelete=SetNull)
+  catagory: Catagory?,relation(optional,onDelete=SetNull)
+  shop: Shop?,relation(onDelete=Cascade)

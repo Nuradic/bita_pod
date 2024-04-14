@@ -1,0 +1,7 @@
+enum: ShopRate
+values:
+  - ONE
+  - TWO
+  - THREE
+  - FOUR
+  - FIVE

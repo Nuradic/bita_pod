@@ -1,0 +1,10 @@
+class: StartStatus
+fields:
+  isRegistrationComplete: bool
+  # isOtpSent: bool
+  # infoReceived: bool
+  created: bool
+  isVerified: bool
+# Verified
+# Pending
+#

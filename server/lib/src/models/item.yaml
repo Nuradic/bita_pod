@@ -1,0 +1,7 @@
+class: Item
+table: item
+fields:
+  product: Product?,relation(onDelete=Cascade)
+  quantity: int
+  order: Order?,relation(optional,onDelete=Cascade)
+  createdAt: DateTime
